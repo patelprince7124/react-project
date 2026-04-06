@@ -1,0 +1,178 @@
+/* Background */
+body {
+  background-color: #0b0f1a;
+}
+
+/* ========================= */
+/* LEFT SIDE LIST */
+/* ========================= */
+
+.fight-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.fight-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mini-logo {
+  width: 35px;
+}
+
+.score-text {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.vs-text {
+  color: white;
+  margin: 0 5px;
+}
+
+.fight-right {
+  text-align: left;
+}
+
+.fight-date {
+  color: #ff004f;
+  margin: 0;
+  font-size: 14px;
+}
+
+.fight-title {
+  color: white;
+  margin: 3px 0 0 0;
+  font-size: 16px;
+}
+
+
+/* ========================= */
+/* RIGHT SIDE CARD */
+/* ========================= */
+
+.fight-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Background Image */
+.fight-img {
+  width: 100%;
+  display: block;
+  transition: 0.6s ease;
+}
+
+/* Image Zoom on Hover */
+.fight-card:hover .fight-img {
+  transform: scale(1.1);
+}
+
+/* Gradient Overlay */
+.fight-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.85),
+    rgba(140, 0, 255, 0.85)
+  );
+  opacity: 0;
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+.fight-card:hover::after {
+  opacity: 1;
+}
+
+/* Center Content */
+.fight-content {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.fight-card:hover .fight-content {
+  opacity: 0.2;
+}
+
+/* Main Logo */
+.main-logo {
+  width: 100px;
+}
+
+
+/* ========================= */
+/* VS SECTION - FINAL FIX */
+/* ========================= */
+
+.vs-section {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;   /* logo left & right */
+  align-items: center;
+  padding: 0 80px;
+  z-index: 2;
+  transition: 0.5s ease;
+}
+
+.fight-card:hover .vs-section {
+  opacity: 0.2;
+}
+
+.side-logo {
+  width: 70px;
+}
+
+/* SCORE SINGLE LINE */
+.score {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  white-space: nowrap;   /* 190 VS 189 એક જ લાઇનમાં */
+}
+
+
+/* ========================= */
+/* Hover Button */
+/* ========================= */
+
+.watch-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: white;
+  color: black;
+  border: none;
+  padding: 12px 35px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: 0.4s ease;
+  z-index: 3;
+}
+
+.fight-card:hover .watch-btn {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.watch-btn:hover {
+  background: hotpink;
+  color: white;
+}

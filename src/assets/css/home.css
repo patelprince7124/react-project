@@ -1,0 +1,50 @@
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.main-bg {
+  background: url("../images/bg.png") center/cover no-repeat;
+  background-attachment: fixed;
+
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  width: 90%;
+  margin: auto;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  margin: 30px 0;
+  max-width: 500px;
+  opacity: 0.8;
+}
+
+.btn-watch {
+  background: linear-gradient(to right, #ff0033, #ff2a6d, #ff6a00);
+  border: none;
+  padding: 15px 40px;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.btn-watch:hover {
+  background: linear-gradient(to right, #ff6a00, #ff2a6d, #ff0033);
+
+}

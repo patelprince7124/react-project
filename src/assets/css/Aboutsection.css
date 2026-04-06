@@ -1,0 +1,38 @@
+.about-section {
+  padding: 120px 0;
+}
+
+.about-img {
+  max-width: 450px;
+}
+.button{
+  display:flex;
+  gap:20px;
+}
+
+.btn-install{
+  background:#ff1e1e;
+  border:none;
+  padding:12px 28px;
+  border-radius:6px;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.4s;
+}
+
+.btn-watch{
+  background:#ff6a00;
+  border:none;
+  padding:12px 28px;
+  border-radius:6px;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.4s;
+}
+
+.btn-install:hover,
+.btn-watch:hover{
+  background:linear-gradient(to right,#ff0033,#ff2a6d,#ff6a00);
+}

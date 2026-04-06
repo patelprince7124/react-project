@@ -1,0 +1,51 @@
+.pricing-section{
+background:#020b1a;
+padding:100px 0;
+}
+
+.pricing-card{
+background:#07152b;
+border:none;
+color:white;
+transition:0.4s;
+}
+
+.pricing-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 40px rgba(255,0,150,0.4);
+}
+
+.pricing-header{
+height:140px;
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+.pricing-header h5{
+font-weight:600;
+}
+
+.pricing-header h2{
+font-size:40px;
+font-weight:700;
+}
+
+.gradient-btn{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+color:white;
+font-weight:600;
+background:linear-gradient(90deg,#ff004f,#ff00cc);
+transition:0.4s;
+}
+
+.gradient-btn:hover{
+transform:scale(1.05);
+box-shadow:0 5px 20px rgba(255,0,150,0.6);
+}

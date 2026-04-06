@@ -1,0 +1,43 @@
+.fighter-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 200px;
+}
+
+/* Container full height */
+.fighter-content {
+    height: 100%;
+    position: relative;
+}
+
+/* Top Title */
+.top-title {
+    position: absolute;
+    top: 10px;
+    /* 👈 60px ની જગ્યાએ 20px કર */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/* Center Content */
+.center-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fighter-name {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.countdown h1 {
+    font-size: 60px;
+    font-weight: bold;
+}

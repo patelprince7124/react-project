@@ -1,0 +1,85 @@
+.navbar.header {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  background: transparent !important;
+  transition: 1.5s ease-in-out;
+  z-index: 99999;
+}
+
+
+
+
+.navbar.header.header-scrolled {
+  background: linear-gradient(to right, #ff0000, #ff2a6d) !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+
+.navbar .nav-link {
+  color: white !important;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #ff2a6d !important;
+}
+
+
+.btn-install {
+  background: #ff1e1e;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.btn-install:hover {
+  background: linear-gradient(to right, #ff0033, #ff2a6d, #ff6a00);
+}
+
+.navbar-toggler {
+  background: white;
+}
+
+.navbar .nav-link {
+  position: relative;
+  text-decoration: none !important;
+}
+
+.navbar .nav-link::after {
+  display: none !important;
+}
+
+.navbar .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(to right, #ff0033, #ff2a6d, #ff6a00);
+  transition: 0.4s ease;
+  border-radius: 10px;
+}
+
+.navbar .nav-link:hover::before {
+  width: 100%;
+}

@@ -1,0 +1,141 @@
+.live-wrapper {
+    padding: 120px 0;
+}
+
+.row.align-items-center {
+    min-height: 600px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.live-text-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.splash-img {
+    width: 120px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: 0;
+}
+
+.live-text {
+    position: relative;
+    font-size: 70px;
+    font-weight: 800;
+    color: white;
+    z-index: 1;
+    line-height: 1;
+}
+
+.stream-text {
+    font-size: 70px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+/* Gradient Button */
+.install-btn {
+    margin-top: 20px;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    background: linear-gradient(90deg, #ff004c, #ff00a8);
+}
+
+.install-btn:hover {
+    background: linear-gradient(90deg, #ff00a8, #ff004c);
+}
+
+.double-slide {
+    display: flex;
+    gap: 20px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 50%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 80, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+/* Hover Effect */
+.image-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+/* White Circle */
+.play-icon {
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pink Triangle */
+.play-icon svg {
+    color: #ff0057;
+    font-size: 18px;
+}
+
+.custom-buttons {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.custom-buttons button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    margin: 0 15px;
+    cursor: pointer;
+}
