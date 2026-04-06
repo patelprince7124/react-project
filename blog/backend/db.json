@@ -1,0 +1,32 @@
+{
+  "blogs": [
+    {
+      "id": "94a6",
+      "title": "Embrace the Dark Feminine",
+      "image": "https://i.pinimg.com/736x/f0/45/76/f04576425f83866b83c0087a640b245a.jpg",
+      "content": "Embrace",
+      "author": "ronak"
+    },
+    {
+      "title": "February read",
+      "image": "https://i.pinimg.com/736x/e1/eb/a6/e1eba6f828dd9e781573611a4bb98cec.jpg",
+      "content": "book",
+      "author": "mihir",
+      "id": "ed60"
+    },
+    {
+      "id": "3cfb",
+      "title": "It Ends With Us - Colleen Hoover",
+      "image": "https://i.pinimg.com/736x/da/1e/92/da1e92ed90ffffef2c53461d35e700a1.jpg",
+      "content": "It Ends With Us ",
+      "author": "prince"
+    },
+    {
+      "id": "7820",
+      "title": "powerless",
+      "image": "https://i.pinimg.com/736x/26/fc/e3/26fce359d168b87141d7d15a24775def.jpg",
+      "content": "powerful",
+      "author": "prakash"
+    }
+  ]
+}
